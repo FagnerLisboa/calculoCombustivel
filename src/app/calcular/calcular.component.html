@@ -1,0 +1,22 @@
+    <h1>Calcular Combustível</h1>
+   
+      <div class="container-fluid">
+          <div class="text-center">
+  
+        <label>Etanol</label><br>
+        <input [(ngModel)]="etanol"type="text" name="etanol" size="13" placeholder="etanol"><br><br>
+  
+        <label>Gasolina</label><br>
+        <input [(ngModel)]="gasolina" type="text" name="gasolina" size="13" placeholder="gasolina"><br><br>
+  
+        <input (click)="calcular()"type="button" value="calcular" > <br> <br>
+        <!-- <input type="reset" value="limpar"> -->
+
+        
+          {{vantagem}}
+        
+
+        </div>
+      </div>
+
+
