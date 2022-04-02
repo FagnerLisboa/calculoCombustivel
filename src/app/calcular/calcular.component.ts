@@ -21,7 +21,7 @@ export class CalcularComponent implements OnInit {
     console.log(this.vantagem);
 
     if (this.gasolina > 0.7 * this.etanol) {
-      this.vantagem = 'Vale mais a pena usar Gasolina';
+      this.vantagem = 'Vale mais a pena usar Gasolina!';
 
     } else {
       this.vantagem = 'Vale mais a pena usar Álcool!';

@@ -1,22 +1,29 @@
-    <h1>Calcular Combustível</h1>
-   
-      <div class="container-fluid">
-          <div class="text-center">
+<content>
+  <div class="container">
+    
+    <div class="title">Calcular Combustível</div>
+    <div class="ipt">
+      <label>Etanol</label>
+      <input [(ngModel)]="etanol" type="text" name="etanol">
+    </div>
+    <div class="ipt">
+      <label>Gasolina</label>
+      <input [(ngModel)]="gasolina" type="text" name="gasolina">
+    </div>
+    <button (click)="calcular()" type="button" value="calcular">Calcular</button>
+
+    <!-- <input type="reset" value="limpar"> -->
+    <div class="result" id="vantagem">
+
+    {{vantagem}}
+
+  </div>
+    
+    
+  </div>
   
-        <label>Etanol</label><br>
-        <input [(ngModel)]="etanol"type="text" name="etanol" size="13" placeholder="etanol"><br><br>
+</content>
+<div class="imagem">
+  <img src="/assets/bomb2.png" alt="combustivel"></div>
+
   
-        <label>Gasolina</label><br>
-        <input [(ngModel)]="gasolina" type="text" name="gasolina" size="13" placeholder="gasolina"><br><br>
-  
-        <input (click)="calcular()"type="button" value="calcular" > <br> <br>
-        <!-- <input type="reset" value="limpar"> -->
-
-        
-          {{vantagem}}
-        
-
-        </div>
-      </div>
-
-
