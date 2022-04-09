@@ -1,29 +1,17 @@
-<content>
-  <div class="container">
-    
-    <div class="title">Calcular Combustível</div>
-    <div class="ipt">
-      <label>Etanol</label>
-      <input [(ngModel)]="etanol" type="text" name="etanol">
-    </div>
-    <div class="ipt">
-      <label>Gasolina</label>
-      <input [(ngModel)]="gasolina" type="text" name="gasolina">
-    </div>
-    <button (click)="calcular()" type="button" value="calcular">Calcular</button>
-
-    <!-- <input type="reset" value="limpar"> -->
-    <div class="result" id="vantagem">
-
+<main>
+<div class="container">
+  <div class="title">Calcular Combustível</div>
+  <div class="ipt">
+    <label>Etanol</label>
+    <input [(ngModel)]="etanol" type="text"  name="etanol"  placeholder="$ Preço">
+  </div>
+  <div class="ipt">
+    <label>Gasolina</label>
+    <input [(ngModel)]="gasolina" type="text" name="gasolina" placeholder="$ Preço">
+  </div>
+  <button (click)="calcular()" type="button" value="calcular">Calcular</button>
+  <div class="result" id="vantagem">
     {{vantagem}}
-
   </div>
-    
-    
-  </div>
-  
-</content>
-<div class="imagem">
-  <img src="/assets/bomb2.png" alt="combustivel"></div>
-
-  
+</div>
+</main>
